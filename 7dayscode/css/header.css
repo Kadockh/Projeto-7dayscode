@@ -1,0 +1,142 @@
+@import url(styles.css);
+@import url(reset.css);
+
+* {
+  box-sizing: border-box;
+}
+
+/* Header e Footer */
+header,
+footer {
+  background-color: var(--cor-header-footer);
+}
+
+header {
+  box-shadow: 0px 2px 4px 0px var(--preto-hover);
+}
+
+/* Container Geral */
+.header {
+  width: 100%;
+  padding: 1em 6em;
+  margin-bottom: 6em;
+}
+
+/* Seção do Header */
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* Logo e Menu */
+.header__logo-menu {
+  display: flex;
+  align-items: center;
+  gap: 96px;
+}
+
+.header__hamburger {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__logo img {
+  max-width: 3em;
+}
+
+.header__nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 32px;
+}
+
+.header__nav a {
+  text-decoration: none;
+  font-weight: var(--pesoTexto-medio);
+  color: var(--cor-textoComum);
+  transition: padding-bottom 0.2s linear, border-bottom 0.2s linear;
+}
+
+.header__nav a:hover {
+  padding-bottom: 0.3em;
+  border-radius: 0.2em;
+  border-bottom: solid 2px var(--cor-principal);
+}
+
+/* Login e Botões */
+.header__actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn__entrar,
+.btn__entrar:hover,
+.btn__entrar:active {
+  background: none;
+  border: none;
+  font-weight: var(--pesoTexto-medio);
+  color: var(--cor-textoComum);
+}
+.btn__cadastrar {
+  background-color: var(--cor-principal) !important ;
+  color: var(--cor-neutra);
+  font-weight: var(--pesoTexto-medio);
+  border: none;
+  transition: box-shadow 0.4s linear;
+}
+
+
+@media (max-width: 768px) {
+    .header__hamburger {
+      display: block; /* Exibe o ícone do menu */
+    }
+  
+    .header {
+      width: max-content;
+    }
+    .header__nav {
+      display: none; /* Oculta o menu por padrão */
+      flex-direction: column;
+      background-color: var(--cor-header-footer);
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      gap: 20px;
+      padding: 1em 0;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  
+    .header__nav.open {
+      display: flex;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  
+    .header__nav-list {
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    } }
+    
+    @media (max-width: 576px) {
+        .header {
+          width: max-content;
+        }
+      }  

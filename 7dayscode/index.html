@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7dayscode</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+        
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+     <header id="header">
+      <script>
+        // Código para carregar o header
+        fetch('/Partials/header.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('header').innerHTML = data;
+          });
+      </script>
+</header>
+
+    <main>
+      <section class="about">
+        <h6 class="about__subtitle">Sobre nós</h6>
+        <h1 class="about__title">Por que somos diferentes?</h1>
+        <p class="about__text">
+          Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as
+          empresas de todo o mundo a se concentrarem naquilo que é realmente
+          importante para elas.
+        </p>
+      </section>
+      <section class="info__container">
+       
+        <div class="info__box">
+          <h2 class="info__highlight">46+</h2>
+          <h6 class="info__subtitle">Cursos concluídos</h6>
+          <p class="info__text">Temos mais de 46 certificações que validam nosso compromisso com a evolução contínua no desenvolvimento de soluções digitais.</p>
+        </div>
+
+        <div class="info__box">
+          <h2 class="info__highlight">2+</h2>
+          <h6 class="info__subtitle">Anos de experiência</h6>
+          <p class="info__text">Com mais de 2 anos de experiência na área de desenvolvimento de sites, estamos sempre em busca de entregar soluções inovadoras e de qualidade para nossos clientes.</p>
+        </div>
+
+        <div class="info__box">
+          <h2 class="info__highlight">5+</h2>
+          <h6 class="info__subtitle">Formações e Certificações</h6>
+          <p class="info__text">Com a busca de concluções em formações na área de TI e 46 certificações, continuo me atualizando para oferecer sempre as melhores soluções e garantir a excelência no trabalho que realizo.</p>
+        </div>
+
+        <div class="info__box">
+          <h2 class="info__highlight">50+</h2>
+          <h6 class="info__subtitle">Projetos Realizados</h6>
+          <p class="info__text">Durante nossa trajetória, contribuímos para a criação e implementação de diversos projetos que impactaram positivamente os resultados de nossos clientes.</p>
+        </div>
+        </div>
+      </section>
+      <section class="works__container">
+        <h6 class="works__tinytext">Estamos prontos para novos desafios!</h6>
+        <h2 class="works__title">Estamos prontos para fazer a diferença para sua empresa</h2>
+        <p class="works__text">Somos uma equipe 100% remota com pessoas do brasil inteiro.</p>
+        <img class=" works__img"
+           src="assets/images/team.png" alt="foto de uma reunião">
+       
+      </section>
+      <section class="testimonials__container">
+        
+          <h6 class="testimonials__tinytext">Veja o que nossos colaboradores falam sobre nós</h6>
+          <h2 class="testimonials__tittle">Na Kadotech, buscamos constantemente melhorar a empresa e nossos colaboradores, para entregar sempre um trabalho sofisticado e simplificado.</h2>
+          <img class="testimonials__img"
+          src="assets/images/Andrey.jfif" alt="foto do melhor funcionário">
+          <h6 class="testimonials__text">Andrey Kadoch</h6>
+          <p class="testimonials__text">Developer</p>
+       
+      </section>
+    </main>
+<footer id="footer">
+
+  <script>
+  // Código para carregar o footer
+        fetch('/Partials/footer.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer').innerHTML = data;
+          });
+
+</script>
+</footer>
+
+   
+    <script src="js/Javascript.js"></script>
+  </body>
+</html>

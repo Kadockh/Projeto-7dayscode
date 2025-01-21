@@ -1,0 +1,30 @@
+@import url(styles.css);
+@import url(reset.css);
+
+.footer__container {
+  text-align: center;
+  padding: 2em;
+  margin: 2%;
+}
+
+.footer__title {
+  font-size: clamp(1.06rem, 2.125rem, 4rem);
+}
+.footer__text {
+  color: var(--cor-textoComum);
+  font-size: clamp(1rem, 1.25rem, 1.75rem);
+}
+.footer__links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2em;
+}
+
+.footer__img {
+  max-width: 4rem;
+  margin-right: 1rem;
+}
+.logokadockh {
+  max-width: 2rem;
+}

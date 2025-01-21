@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7dayscode</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header id="header">
+      <script>
+        // Código para carregar o header
+        fetch("/Partials/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("header").innerHTML = data;
+          });
+      </script>
+    </header>
+
+    <main>
+      <section class="sobreNos__container">
+        <h6 class="sobreNos__subtitle">Sobre nós</h6>
+
+        <p class="sobreNos__text">
+          Somos uma equipe apaixonada por tecnologia e inovação, com experiência
+          em diversas áreas do desenvolvimento digital. Desde a concepção
+          inicial até a entrega de projetos completos, nossa missão é combinar
+          funcionalidade, design e eficiência para criar soluções que impactem
+          positivamente o dia a dia das pessoas e das organizações.
+        </p>
+        <p class="sobreNos__text">
+          Atuamos em diferentes frentes, incluindo a análise de sistemas,
+          modelagem de processos, desenvolvimento front-end e integração de
+          ferramentas e plataformas. Acreditamos que a tecnologia deve ser
+          acessível e intuitiva, e nos dedicamos a oferecer produtos e serviços
+          que atendam às reais necessidades de nossos clientes, sempre mantendo
+          um alto padrão de qualidade.
+        </p>
+        <p class="sobreNos__text">
+          Além disso, buscamos constantemente nos atualizar, aprimorando nossas
+          habilidades e explorando novas abordagens. Nosso foco é criar
+          experiências digitais marcantes, que não apenas resolvam problemas,
+          mas também agreguem valor e impulsionem o crescimento de quem confia
+          em nosso trabalho.
+        </p>
+
+        <h6 class="sobreNos__tinytext">Nossas formações e certificados</h6>
+
+        <h2 class="SobreNos__title">
+          Evoluindo constantemente para criar experiências incriveis
+        </h2>
+      </section>
+      <section class="exp__container">
+        <div class="exp__courses">
+          <h4 class="exp__text">Análise e desenvolvimento de sistemas</h4>
+          <p class="exp__date">Janeiro/2024 - Julho/2026</p>
+
+          <div class="exp___img">
+            <img src="assets/images/Logo-qi.png" alt="FAQI" />
+          </div>
+        </div>
+        <div class="exp__courses">
+          <h4 class="exp__text">Formação A partir do zero: HTML e CSS para projetos web</h4>
+          <p class="exp__date">Carga horária: 52 horas</p>
+
+          <div class="exp___img">
+            <img src="assets/images/Alura.jpeg" alt="FAQI" />
+          </div>
+        </div>
+        <div class="exp__courses">
+          <h4 class="exp__text">Formação A partir do zero: iniciante em programação</h4>
+          <p class="exp__date">Carga horária: 31 horas</p>
+
+          <div class="exp___img">
+            <img src="assets/images/Alura.jpeg" alt="FAQI" />
+          </div>
+        </div>
+        <div class="exp__courses">
+          <h4 class="exp__text">Acessibilidade e tecnologias web: técnicas em HTML, CSS e JavaScript para projetos inclusivos</h4>
+          <p class="exp__date">Carga horária: 32 horas</p>
+
+          <div class="exp___img">
+            <img src="assets/images/Alura.jpeg" alt="FAQI" />
+          </div>
+        </div>
+        <div class="exp__courses">
+          <h4 class="exp__text">Bootstrap 5: desenvolvimento de websites responsivos e atraentes</h4>
+          <p class="exp__date">Carga horária: 15 horas</p>
+
+          <div class="exp___img">
+            <img src="assets/images/Alura.jpeg" alt="FAQI" />
+          </div>
+        </div>
+        <div class="exp__courses">
+          <h4 class="exp__text">Cibersegurança</h4>
+          <p class="exp__date">Carga horária: 56 horas</p>
+
+          <div class="exp___img">
+            <img src="assets/images/Alura.jpeg" alt="FAQI" />
+          </div>
+        </div>
+        <div class="exp__courses">
+          <h4 class="exp__text">Aprofunde em AWS com serviços de gerenciamento e operação</h4>
+          <p class="exp__date">Carga horária: 32 horas</p>
+
+          <div class="exp___img">
+            <img src="assets/images/Alura.jpeg" alt="FAQI" />
+          </div>
+        </div>
+        <div class="exp__courses">
+          <h4 class="exp__text">Agilidade: abordagens e práticas avançadas</h4>
+          <p class="exp__date">Carga horária: 50 horas</p>
+
+          <div class="exp___img">
+            <img src="assets/images/Alura.jpeg" alt="FAQI" />
+          </div>
+        </div>
+        <div class="exp__courses">
+          <h4 class="exp__text">Gestão Ágil de Projetos</h4>
+          <p class="exp__date">Carga horária: 85 horas</p>
+
+          <div class="exp___img">
+            <img src="assets/images/Alura.jpeg" alt="FAQI" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <script>
+        // Código para carregar o footer
+        fetch("/Partials/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("footer").innerHTML = data;
+          });
+      </script>
+    </footer>
+    <script src="js/Javascript.js"></script>
+  </body>
+</html>

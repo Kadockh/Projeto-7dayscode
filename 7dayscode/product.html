@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7dayscode</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header id="header">
+      <script>
+        // Código para carregar o header
+        fetch("/Partials/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("header").innerHTML = data;
+          });
+      </script>
+    </header>
+
+    <main>
+        <section class="product">
+        <h6 class="product__subtitle">Produtos</h6>
+        <h2 class="product__title">Nossas Soluções Digitais</h2>
+        <p class="product__text">Na Kadotech, nos dedica Na HBTech., nos dedicamos a criar soluções digitais que realmente fazem a diferença. Cada site que desenvolvemos reflete nosso compromisso com a qualidade e inovação. Estamos sempre em busca de aprimorar nossos produtos, garantindo a melhor experiência para nossos clientes. Confira alguns dos nossos projetos desenvolvidos, que demonstram nossa habilidade em transformar ideias em resultados eficazes e impactantes.</p>
+
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+ <dotlottie-player src="https://lottie.host/3556d186-0604-49da-a1ef-3bf0e2a7dc29/NI0MWYBVaO.lottie" background="transparent" speed="1" style="width: 500px; height: 500px" loop autoplay></dotlottie-player>
+
+    </section>
+    <section class="product__box">
+        <p>Estamos dedicados a implementar soluções digitais inovadoras que realmente façam a diferença para nossos clientes. Neste momento, estamos desenvolvendo diversos projetos que, em breve, serão apresentados com resultados concretos. Nossa busca contínua por excelência e criatividade nos inspira a criar produtos de alta qualidade, capazes de atender às demandas do mercado e superar expectativas. Em breve, você poderá conferir o impacto dos nossos esforços!</p>
+      
+    </section>
+
+    </main>
+
+
+
+    <footer id="footer">
+      <script>
+        // Código para carregar o footer
+        fetch("/Partials/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("footer").innerHTML = data;
+          });
+      </script>
+    </footer>
+  </body>
+</html>
